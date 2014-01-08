@@ -8,4 +8,14 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+
+  # Тест с H1
+  def title_to_h1(g_title)
+  	if g_title.empty?
+  		"On this page nousing tag '<title>'"
+	else
+		"On this page using <#{g_title}> title tag"
+	end
+  end
+
 end
